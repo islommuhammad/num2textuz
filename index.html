@@ -4,8 +4,17 @@
 		<script src="num2text.js"></script>
 	</head>
 	<body>
+		
+		<input id="surov" type="text">
+		<br>
+		<input type="button" onclick="tekshir()" value="Bajar">
+		<br>
+		<p id="natija"></p>
 		<script>
-			document.write(num2text("234567"));
+			function tekshir(){
+			var myElement = (document.getElementById("surov")).value;
+			document.getElementById("natija").innerHTML = num2text(myElement)+" so'm";
+     }
 		</script>
 	</body>
 </html>
